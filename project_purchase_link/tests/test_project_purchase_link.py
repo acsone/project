@@ -47,9 +47,7 @@ class TestProjectPurchaseUtilities(common.TransactionCase):
                         0,
                         {
                             "name": "Test line",
-                            "analytic_distribution": {
-                                self.project.analytic_account_id.id: 100
-                            },
+                            "analytic_distribution": {self.project.account_id.id: 100},
                             "price_unit": 50,
                             "product_qty": 4,
                             "qty_received": 4,
